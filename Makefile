@@ -6,9 +6,9 @@ test:
 	#python -m pytest -vv test_hello.py
 
 format:
-	black $$(git ls-files '*.py')
+	#black $$(git ls-files '*.py')
 
 lint:
-	pylint --disable=R,C $$(git ls-files '*.py')
+	#pylint --disable=R,C $$(git ls-files '*.py')
 
 all: install lint test
